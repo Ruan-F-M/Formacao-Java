@@ -1,4 +1,4 @@
-package dio;
+package anatomia.das.classes.pt4;
 
 public class BoletimEstudantil {
     public static void main(String[] args) {

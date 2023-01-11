@@ -1,4 +1,4 @@
-package dio;
+package anatomia.das.classes.pt3;
 
 public class MyClass {
     public static void main(String[] args) {
