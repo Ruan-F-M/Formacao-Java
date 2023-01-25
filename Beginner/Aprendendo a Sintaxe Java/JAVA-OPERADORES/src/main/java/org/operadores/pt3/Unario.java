@@ -1,6 +1,6 @@
 package org.operadores.pt3;
 
-public class unario {
+public class Unario {
     public static void main(String[] args) {
 
         int numero = 5;

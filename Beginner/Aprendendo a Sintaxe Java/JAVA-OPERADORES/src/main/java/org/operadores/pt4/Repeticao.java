@@ -1,6 +1,6 @@
 package org.operadores.pt4;
 
-public class repeticao {
+public class Repeticao {
     public static void main(String[] args) {
 //        int numero = 5;
 //
