@@ -11,7 +11,7 @@ package org;
  * @version 1.0
  * @since   01/01/2022
  * @link https://glysns.gitbook.io/java-basico/sintaxe/documentacao
- * @code javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ./docs src/main/java/org/*.java 
+ * @code javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ./docs src/main/java/org/*.java
  */
 
 public class Calculadora {
