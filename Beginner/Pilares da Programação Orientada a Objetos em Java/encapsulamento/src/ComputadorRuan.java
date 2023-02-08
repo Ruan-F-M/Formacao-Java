@@ -1,20 +1,23 @@
 public class ComputadorRuan {
     public static void main(String[] args) {
-        System.out.println("MSN");
-        MSNMessenger msn = new MSNMessenger();
-        msn.enviarMensagem();
-        msn.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
 
-        System.out.println("FACEBOOK");
+		/*
+		    NÃO SE SABE QUAL APP
+		    MAS QUALQUER UM DEVERÁ ENVIAR E RECEBER MENSAGEM
+		 */
+        String appEscolhido="tlg";
 
-        FacebookMessenger fcb = new FacebookMessenger();
-        fcb.enviarMensagem();
-        fcb.receberMensagem();
+        if(appEscolhido.equals("msn"))
+            smi = new MSNMessenger();
+        else if(appEscolhido.equals("fcb"))
+            smi = new FacebookMessenger();
+        else if(appEscolhido.equals("tlg"))
+            smi = new Telegram();
 
-        System.out.println("TELEGRAM");
 
-        Telegram tlg = new Telegram();
-        tlg.enviarMensagem();
-        tlg.receberMensagem();
+        smi.enviarMensagem();
+        smi.salvarHistoricoMensagem();
+        smi.receberMensagem();
     }
 }
