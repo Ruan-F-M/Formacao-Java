@@ -14,7 +14,7 @@ public class Fabrica {
         Impressora impressora = em;
         Digitalizadora digitalizadora = em;
         Copiadora copiadora = em;
-        
+
         impressora.imprimir();
         digitalizadora.digitalizar();
         copiadora.copiar();
