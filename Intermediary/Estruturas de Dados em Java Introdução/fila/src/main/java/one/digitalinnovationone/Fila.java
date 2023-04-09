@@ -22,6 +22,7 @@ public class Fila {
                     break;
                 }
             }
+            return primeiroNo;
         }
         return null;
     }
@@ -58,8 +59,7 @@ public class Fila {
 
         if (refNoEntradaFila != null){
             while (true){
-                stringRetorno += "[No{Objeto=" + noAuxiliar.getObject() + "}]--->";
-                noAuxiliar = noAuxiliar.getRefNo();
+                stringRetorno += "[No{objeto=" + noAuxiliar.getObject() + "}]--->";
                 if (noAuxiliar.getRefNo() != null){
                     noAuxiliar = noAuxiliar.getRefNo();
                 }else{
