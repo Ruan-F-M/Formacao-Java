@@ -1,8 +1,8 @@
-package one.digitalinnovationone.refatorando;
+package one.digitalinnovationone.refatorandoobjeto.generics;
 
 public class Main {
     public static void main(String[] args) {
-        Fila minhaFila = new Fila();
+        Fila<String> minhaFila = new Fila<>();
 
         minhaFila.enqueue("Primeiro");
         minhaFila.enqueue("Segundo");
@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println(minhaFila);
 
-        minhaFila.enqueue(new No("Ultimo"));
+        minhaFila.enqueue("Ultimo");
 
         System.out.println(minhaFila);
 
