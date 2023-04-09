@@ -17,7 +17,7 @@ public class No {
         return refNo;
     }
 
-    public void setRefNo(No reNo) {
+    public void setRefNo(No refNo) {
         this.refNo = refNo;
     }
 

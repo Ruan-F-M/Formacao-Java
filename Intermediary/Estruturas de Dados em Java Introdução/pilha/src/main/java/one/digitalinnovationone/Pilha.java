@@ -4,7 +4,7 @@ public class Pilha {
 
     private No refNoEntradaPilha;
 
-    public Pilha(No refNoEntradaPilha) {
+    public Pilha() {
         this.refNoEntradaPilha = null;
     }
 
@@ -15,7 +15,7 @@ public class Pilha {
     }
 
     public No pop(){
-        if(this.isEmpty()){
+        if(!this.isEmpty()){
             No noPoped = refNoEntradaPilha;
             refNoEntradaPilha = refNoEntradaPilha.getRefNo();
             return noPoped;
@@ -33,6 +33,26 @@ public class Pilha {
         }
         return false;
 //        return refNoEntradaPilha == null ? true : false;
+    }
+    @Override
+    public String toString(){
+
+        String stringRetorno = "-------------\n";
+        stringRetorno += "      Pilha\n";
+        stringRetorno += "-------------\n";
+
+        No noAuxiliar = refNoEntradaPilha;
+
+        while (true){
+            if(noAuxiliar != null){
+                stringRetorno += "[No{dado=" + noAuxiliar.getDado() +"}]\n";
+                noAuxiliar = noAuxiliar.getRefNo();
+            }else{
+                break;
+            }
+        }
+        stringRetorno += "=============\n";
+        return stringRetorno;
     }
 
 }
